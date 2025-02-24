@@ -8,7 +8,7 @@ export const BOOKS = [
     {
       id:2,
       title: "Harry Potter and the Chamber of Secrets",
-      author: "J.K. Rowling",
+      author: "J.K. Rovling",
       format: "Paperback"
     },
     {
