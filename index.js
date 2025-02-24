@@ -15,8 +15,8 @@ app.get('/books', (req, res) => {
   res.json(BOOKS);  // Send imported data as JSON response
 });
 
-
-app.get('/books/:id', (req, res) => {
+//(get book by id -locally )
+app.get('/book/:id', (req, res) => {
   const bookId = parseInt(req.params.id, 10); // Make sure the book ID is converted to a number
   const book = BOOKS.find(b => b.id === bookId); // Find the book by ID
   
