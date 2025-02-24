@@ -1,4 +1,5 @@
-import { Pool } from 'pg';
+import pkg from 'pg';
+const {Pool} = pkg;
 
 const pool = new Pool({
     user: 'tpl522_13',  // Replace with your PostgreSQL username
