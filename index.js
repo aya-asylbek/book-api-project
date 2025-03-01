@@ -28,10 +28,10 @@ app.get('/books', async (req, res) => {
 });
 
 //(get book by id -locally )
-app.get('/book/:id', (req, res) => {
-const bookId = parseInt(req.params.id, 10); // Make sure the book ID is converted to a number
-const book = BOOKS.find(b => b.id === bookId); // Find the book by ID
-});
+// app.get('/book/:id', (req, res) => {
+// const bookId = parseInt(req.params.id, 10); // Make sure the book ID is converted to a number
+// const book = BOOKS.find(b => b.id === bookId); // Find the book by ID
+// });
 
 //GET book by ID (Using postgres)
 app.get('/books/:id', async (req, res) => {
