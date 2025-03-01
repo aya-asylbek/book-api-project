@@ -23,6 +23,7 @@ Setup
 
 git clone https://github.com/your-username/book-api-project.git
 
+
 cd book-api-project
 
 2. Install dependencies
@@ -55,15 +56,25 @@ const pool = new Pool({
   port: 5432,
 });
 
+<img width="1680" alt="Screenshot 2025-02-24 at 1 06 57 PM" src="https://github.com/user-attachments/assets/fa190818-c330-4d36-b7c3-a7b4e6f28c10" />
+
+
 5. Run the Application
 
 Start the server:
 
 npm start
 
-The server will start running on http://localhost:3000.
+The server will start running on http://localhost:3000
 
-6. Test with Postman
+Type in browser http://localhost:3000/books and you will see all books from list:
+
+ <img width="1680" alt="Screenshot 2025-02-24 at 10 43 58 AM" src="https://github.com/user-attachments/assets/6d824ba6-8195-406c-a557-b0102287a841" />
+
+Type in browser http://localhost:3000/books/1 or through Postman and you will see 1st book from the list!(If you change to 2 ,you will see 2nd book and etc)
+
+<img width="1680" alt="Screenshot 2025-02-24 at 10 48 07 AM" src="https://github.com/user-attachments/assets/c21c7542-c9a5-48df-8179-9938208e4c00" />
+
 
 Use Postman to test the API by sending HTTP requests:
 
@@ -74,6 +85,9 @@ PUT /books/:id to update an existing book.
 DELETE /books/:id to delete a book.
 
 Example Requests
+
+
+<img width="1680" alt="Screenshot 2025-02-24 at 10 44 28 AM" src="https://github.com/user-attachments/assets/69a88584-63c6-4a37-a882-c0e615d13ed4" />
 
 1. Create a new book:
 POST /books
@@ -102,6 +116,7 @@ PUT /books/1
 4. Delete a book:
 
 DELETE /books/1
+
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
